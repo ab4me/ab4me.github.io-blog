@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.clear{
+    clear:both;
+}
+/* 整体导航 */
+nav{
+    float: right;
+    margin-top: 24px;
+
+}
+li{
+    list-style: none;
+    float: left;
+    font: 13px arial;
+    margin-right: 20px;
+    font-weight: bold;
+    line-height: 13px;
+}
+li a{
+    color: #333;
+}
+li a:hover{
+    color: #3388FF;
+}
+li>span{
+    color:#fff;
+    background: #3388FF;
+    padding: 4px;
+}
+nav ul li:nth-child(7){
+    font-weight: normal;
+}
+nav ul li:nth-child(8){
+    font-weight: normal;
+}
+nav ul li:nth-child(9){
+    font-weight: normal;
+}
+/* 设置菜单 */
+.menu1{
+    position: relative; /*相对定位，作为母体。*/
+}
+.menu1 .menu1_1{
+    width: 65px;
+    font-size: 12px;
+    text-align: center;
+    /* border: 1px solid #D1D1D1; */
+    box-shadow: 1px 0px 10px #ccc;/*阴影*/
+    position: absolute;/*绝对定位*/
+    top: 26px;
+    left: -20px;;
+    display: none;
+}
+.menu1 .menu1_1 a{
+    display: block;
+    text-decoration: none;
+    line-height: 26px;
+    
+}
+.menu1 .menu1_1 a:hover{
+    background: #3388FF;
+}
+/* 设置菜单箭头 */
+.menu1 .j{
+    width: 0px;
+    height: 0px;
+    border: 8px solid;
+    border-color:transparent transparent #fff transparent;
+    position: absolute;top:-16px;left: 26px; 
+}
+.menu1:hover  .menu1_1{
+    display: block;
+}
+/* 外部链接 */
+.menu2:hover .menu2_1{
+    display: block;    
+}
+.menu2 .menu2_1 a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+.menu2 .menu2_1{
+    width: 84px;/*可选102px*/
+    height: 100%;
+    background: #f9f9f9;
+    text-align: center;
+    position: absolute; top: 0;right: 0;
+    border-left: 1px solid #e5e5e5;
+    font-size: 12px;
+    display: none;
+}
+.menu2_1 .text{
+    margin: 25px auto;
+    width: 66px;
+}
+.menu2 .link a{
+    width: 66px;
+    margin: 0px auto;
+    padding: 10px 0;
+    display: inline-block;
+    border-top: 1px solid #f0f0f0;
+    text-decoration: none;
+}
+.menu2 .menu2_1 img{
+    width: 36px;
+    height: 36px;
+}
+/* 搜索 */
+.search{
+    width: 800px;
+    margin: 80px auto;
+    text-align: center;
+}
+.search form{margin: 30px auto;width: 604px;position: relative;}
+.search input{border: none;float: left;}
+.search input[type="text"]{width:500px;height: 34.6px; border: 1px solid #3171f3;outline: none;}
+.search i{position: absolute;}
+.search input[type="button"]{width: 100px;height: 36px;color: #fff;background: #3171f3;border: 1px solid #3171f3;cursor:pointer}
+/* 底部信息 */
+.msg{margin: 280px auto 0;width: 800px;text-align: center;font-size: 12px;color: #999;}
+.msg a{color: #999;}
+.ewm p{font-weight: bold;color: #666;}
+.msg .tg{margin:20px 0 5px 0; }
+.msg .tg a{margin: 0 10px 0 10px;}
+.msg .bq>a{margin-left: 20px;}
